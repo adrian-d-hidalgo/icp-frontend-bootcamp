@@ -16,6 +16,12 @@ Run a replica of ICP:
 dfx start --background --clean
 ```
 
+Deploy the Internet Identity canister:
+
+```bash
+dfx deploy internet_identity
+```
+
 There should be an output in the terminal like the following:
 
 ```bash
@@ -29,19 +35,14 @@ URLs:
         internet_identity: http://127.0.0.1:4943/?canisterId=bd3sg-teaaa-aaaaa-qaaba-cai&id=bkyz2-fmaaa-aaaaa-qaaaq-cai
 ```
 
-Deploy the Internet Identity canister:
-
-```bash
-dfx deploy internet_identity
-```
-
-Copy `.env-example` and rename the copy to `.env`
+Copy `src/frontend/.env-example` and rename the copy to `src/frontend/.env`
 
 Replace the value of `REACT_APP_INTERNET_COMPUTER_PROVIDER` with the URL obtained from `dfx deploy internet_identity`, for example: `http://bkyz2-fmaaa-aaaaa-qaaaq-cai.localhost:4943/`
 
 Run developer mode:
 
 ```bash
+cd src/frontend
 npm run start
 ```
 
