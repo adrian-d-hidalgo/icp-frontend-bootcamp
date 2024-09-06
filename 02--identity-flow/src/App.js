@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import LoginButton from './components/login/LoginButton';
-import LogoutButton from './components/login/LogoutButton';
+import LoginButton from './components/auth/LoginButton';
+import LogoutButton from './components/auth/LogoutButton';
 import { useContext } from 'react';
 import { AuthContext } from './context/AuthContext';
 
