@@ -3,7 +3,7 @@ import './App.css';
 import LoginButton from './components/login/LoginButton';
 import LogoutButton from './components/login/LogoutButton';
 import { useContext } from 'react';
-import { AuthContext } from './context/context/AuthContext';
+import { AuthContext } from './context/AuthContext';
 
 function App() {
   const { isAuthenticated } = useContext(AuthContext);
