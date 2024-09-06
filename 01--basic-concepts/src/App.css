@@ -31,11 +31,3 @@
     transform: rotate(360deg);
   }
 }
-
-.container {
-  display: flex;
-  justify-content: center; /* Centrar el contenido horizontalmente */
-  align-items: center; /* (Opcional) Centrar el contenido verticalmente */
-  flex-direction: column; /* Asegura que los elementos se dispongan en columna */
-  margin: 20px 0; /* Espacio vertical entre los contenedores */
-}
